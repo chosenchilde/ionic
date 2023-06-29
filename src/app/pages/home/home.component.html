@@ -1,1 +1,8 @@
-<p>home works!</p>
+<div *ngIf="receita">
+
+    <ul>
+        <li *ngFor ="let receita of receita">
+        <a routerLink="/view/{{receita.id}}">{{receita.name}}</a></li>
+    </ul>
+
+</div>
